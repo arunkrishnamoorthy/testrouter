@@ -1,0 +1,30 @@
+{
+  "routes": [
+    {
+      "source": "^/index.html$",
+      "target": "index.html",
+      "localDir": "."
+    },
+    {
+      "source": "^/admin-books/(.*)$",
+      "target": "$1",
+      "localDir": "admin-books"
+    },
+    {
+      "source": "^/appconfig/(.*)$",
+      "target": "$1",
+      "localDir": "appconfig"
+    },
+    {
+      "source": "^/browse/(.*)$",
+      "target": "$1",
+      "localDir": "browse"
+    },
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "destination": "srv-api",
+      "csrfProtection": true
+    }
+  ]
+}

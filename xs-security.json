@@ -1,0 +1,28 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.admin",
+      "description": "admin"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "admin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.admin"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": [
+      "http://localhost:*/**",
+      "http*://*.cfapps.*.hana.ondemand.com/**",
+      "https://port5000-workspaces-ws-q2m2x.eu10.applicationstudio.cloud.sap/login/callback",
+      "https://port5000-workspaces-ws-692d6.us10.applicationstudio.cloud.sap/login/callback",
+      "https://*.us10.applicationstudio.cloud.sap/login/callback"
+    ]
+  }
+}
